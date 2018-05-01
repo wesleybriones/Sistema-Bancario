@@ -48,10 +48,11 @@ public class Acciones_BancariasTest {
         String dpi = "5555";
         String noCuenta = "10";
         String saldo = "8";
+        String contra = "aa";
         String correo = "juan@gmail.com";
         Acciones_Bancarias instance = new Acciones_Bancarias();
         boolean expResult = true;
-        boolean result = instance.nuevo_cliente(nombre, apellido, dpi, noCuenta, saldo, correo);
+        boolean result = instance.nuevo_cliente(nombre, apellido, dpi, noCuenta, saldo, correo, contra);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -69,9 +70,10 @@ public class Acciones_BancariasTest {
         String noCuenta = "11";
         String saldo = "8";
         String correo = "juan@gmail.com";
+        String contra = "aa";
         Acciones_Bancarias instance = new Acciones_Bancarias();
         boolean expResult = true;
-        boolean result = instance.validar_registro(nombre, apellido, dpi, noCuenta, saldo, correo);
+        boolean result = instance.validar_registro(nombre, apellido, dpi, noCuenta, saldo, correo, contra);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -89,9 +91,10 @@ public class Acciones_BancariasTest {
         String noCuenta = "12";
         String saldo = "8";
         String correo = "juan@gmail.com";
+        String contra = "aa";
         Acciones_Bancarias instance = new Acciones_Bancarias();
         boolean expResult = true;
-        boolean result = instance.guardar(nombre, apellido, dpi, noCuenta, saldo, correo);
+        boolean result = instance.guardar(nombre, apellido, dpi, noCuenta, saldo, correo, contra);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");

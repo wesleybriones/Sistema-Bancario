@@ -1,9 +1,9 @@
 
 package funcionalidades;
 
-public class Registro extends javax.swing.JFrame {
+public class Login extends javax.swing.JFrame {
 
-    public Registro() {
+    public Login() {
         initComponents();
     }
 
@@ -14,16 +14,11 @@ public class Registro extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        tfapellido = new javax.swing.JTextField();
-        tfnombre = new javax.swing.JTextField();
-        tfdpi = new javax.swing.JTextField();
         tfnocuenta = new javax.swing.JTextField();
-        tfsaldoinicial = new javax.swing.JTextField();
-        tfcorreo = new javax.swing.JTextField();
         tfcontra = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -34,69 +29,26 @@ public class Registro extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Registro");
-
-        jButton2.setBackground(new java.awt.Color(0, 0, 102));
-        jButton2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Atras");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
+        jLabel1.setText("Login");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(137, 137, 137)
                 .addComponent(jLabel1)
-                .addGap(119, 119, 119))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                .addComponent(jLabel1)
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 102));
-
-        tfapellido.setForeground(new java.awt.Color(102, 102, 102));
-        tfapellido.setToolTipText("");
-        tfapellido.setBorder(javax.swing.BorderFactory.createTitledBorder("Apellido"));
-        tfapellido.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tfapellidoActionPerformed(evt);
-            }
-        });
-
-        tfnombre.setForeground(new java.awt.Color(102, 102, 102));
-        tfnombre.setToolTipText("");
-        tfnombre.setBorder(javax.swing.BorderFactory.createTitledBorder("Nombre"));
-        tfnombre.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tfnombreActionPerformed(evt);
-            }
-        });
-
-        tfdpi.setForeground(new java.awt.Color(102, 102, 102));
-        tfdpi.setToolTipText("");
-        tfdpi.setBorder(javax.swing.BorderFactory.createTitledBorder("DPI"));
-        tfdpi.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tfdpiActionPerformed(evt);
-            }
-        });
 
         tfnocuenta.setForeground(new java.awt.Color(102, 102, 102));
         tfnocuenta.setToolTipText("");
@@ -104,24 +56,6 @@ public class Registro extends javax.swing.JFrame {
         tfnocuenta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tfnocuentaActionPerformed(evt);
-            }
-        });
-
-        tfsaldoinicial.setForeground(new java.awt.Color(102, 102, 102));
-        tfsaldoinicial.setToolTipText("");
-        tfsaldoinicial.setBorder(javax.swing.BorderFactory.createTitledBorder("Saldo inicial"));
-        tfsaldoinicial.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tfsaldoinicialActionPerformed(evt);
-            }
-        });
-
-        tfcorreo.setForeground(new java.awt.Color(102, 102, 102));
-        tfcorreo.setToolTipText("");
-        tfcorreo.setBorder(javax.swing.BorderFactory.createTitledBorder("Correo"));
-        tfcorreo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tfcorreoActionPerformed(evt);
             }
         });
 
@@ -137,10 +71,20 @@ public class Registro extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(0, 0, 51));
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Guardar");
+        jButton1.setText("Ingresar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setBackground(new java.awt.Color(0, 0, 51));
+        jButton2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("Registro");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
             }
         });
 
@@ -152,41 +96,28 @@ public class Registro extends javax.swing.JFrame {
                 .addContainerGap(25, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(tfcontra, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tfsaldoinicial, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tfcorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tfnocuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tfdpi, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tfapellido, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tfnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tfnocuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(91, 91, 91)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(tfnombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(tfapellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(tfdpi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(172, 172, 172)
                 .addComponent(tfnocuenta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(tfsaldoinicial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(tfcorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(54, 54, 54)
                 .addComponent(tfcontra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(78, 78, 78)
+                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 34, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
+                .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 34, Short.MAX_VALUE)
                 .addContainerGap())
         );
-
-        tfsaldoinicial.getAccessibleContext().setAccessibleName("saldo inicial");
 
         jPanel3.setBackground(new java.awt.Color(0, 0, 51));
 
@@ -232,44 +163,25 @@ public class Registro extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void tfapellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfapellidoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tfapellidoActionPerformed
-
-    private void tfnombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfnombreActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tfnombreActionPerformed
-
-    private void tfdpiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfdpiActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tfdpiActionPerformed
-
     private void tfnocuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfnocuentaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfnocuentaActionPerformed
-
-    private void tfsaldoinicialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfsaldoinicialActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tfsaldoinicialActionPerformed
-
-    private void tfcorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfcorreoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tfcorreoActionPerformed
 
     private void tfcontraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfcontraActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfcontraActionPerformed
     Acciones_Bancarias ab = new Acciones_Bancarias();
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if( ab.nuevo_cliente(tfnombre.getText(), tfapellido.getText(), tfdpi.getText(), 
-                tfnocuenta.getText(), tfsaldoinicial.getText(), tfcorreo.getText(), tfcontra.getText()))
-            System.out.println("exito!");
-        
+        if( ab.login(tfnocuenta.getText(), tfcontra.getText())){
+            Menu menu = new Menu();
+            menu.setVisible(true);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        principal.log.setVisible(true);
-        this.setVisible(false);
+        Registro reg = new Registro();
+        reg.setVisible(true);
+        principal.log.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
 
@@ -281,12 +193,7 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField tfapellido;
     private javax.swing.JTextField tfcontra;
-    private javax.swing.JTextField tfcorreo;
-    private javax.swing.JTextField tfdpi;
     private javax.swing.JTextField tfnocuenta;
-    private javax.swing.JTextField tfnombre;
-    private javax.swing.JTextField tfsaldoinicial;
     // End of variables declaration//GEN-END:variables
 }
