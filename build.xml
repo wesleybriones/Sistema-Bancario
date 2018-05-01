@@ -29,7 +29,7 @@
       <junit>
          <classpath refid = "classpath.test" />
          <formatter type = "brief" usefile = "false" />
-         <test name = "funcionalidades/Acciones_BancariasTest.java" />
+         <test name = "${testdir}/funcionalidades/Acciones_BancariasTest" />
       </junit>
    </target>
 	
