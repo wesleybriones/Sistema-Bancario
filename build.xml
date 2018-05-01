@@ -1,6 +1,6 @@
 <project name = "Sistema Bancario" default = "test" basedir = ".">
    <property name = "testdir" location = "Sistema-Bancario/test" />
-   <property name = "srcdir" location = "Sistema-Bancario/src" />   
+   <property name = "srcdir" location = "Sistema-Bancario" />   
    <property name = "full-compile" value = "true" />
 	
    <path id = "classpath.base"/>
