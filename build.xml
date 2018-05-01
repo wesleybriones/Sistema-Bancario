@@ -14,7 +14,7 @@
 	
    <target name = "clean" >
       <delete verbose = "${full-compile}">
-         <fileset dir = "${destdir}" includes = "**/*.class" />
+         <fileset dir = "${testdir}" includes = "**/*.class" />
       </delete>
    </target>
 	
