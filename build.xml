@@ -1,4 +1,4 @@
-<project name = "Sistema Bancario" default = "test" basedir = "./Sistema-Bancario">
+<project name = "Sistema Bancario" default = "test" basedir = "./Sistema-Bancario/">
    <property name = "testdir" location = "test" />
    <property name = "srcdir" location = "src" />   
    <property name = "destdir" location = "build/classes/funcionalidades" />
