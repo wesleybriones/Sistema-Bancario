@@ -13,20 +13,20 @@
       <path refid = "classpath.base" />
    </path>
 	
-   <target name = "limpiar" >
+   <target name = "clean" >
       <delete verbose = "${full-compile}">
          <fileset dir = "${destdir}" includes = "**/*.class" />
       </delete>
    </target>
 	
-   <target name = "compilar" depends = "limpiar">
+   <target name = "compile" depends = "clean">
       <javac srcdir = "${srcdir}" destdir = "${destdir}" 
          verbose = "${full-compile}">
          <classpath refid = "classpath.test"/>
       </javac>
    </target>
 	
-   <target name = "pruebas" depends = "compilar">
+   <target name = "test" depends = "compile">
       <junit>
          <classpath refid = "classpath.test" />
          <formatter type = "brief" usefile = "false" />
