@@ -1,7 +1,6 @@
 <project name = "Sistema Bancario" default = "test" basedir = ".">
    <property name = "testdir" location = "Sistema-Bancario/test" />
    <property name = "srcdir" location = "Sistema-Bancario/src" />   
-   <property name = "destdir" location = "Sistema-Bancario/build/classes/funcionalidades" />
    <property name = "full-compile" value = "true" />
 	
    <path id = "classpath.base"/>
@@ -20,7 +19,7 @@
    </target>
 	
    <target name = "compile" depends = "clean">
-      <javac srcdir = "${srcdir}" destdir = "${destdir}" 
+      <javac srcdir = "${srcdir}" destdir = "${testdir}" 
          verbose = "${full-compile}">
          <classpath refid = "classpath.test"/>
       </javac>
