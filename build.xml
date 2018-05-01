@@ -1,13 +1,13 @@
-<project name = "Sistema Bancario" default = "test" basedir = "./Sistema-Bancario/">
-   <property name = "testdir" location = "test" />
-   <property name = "srcdir" location = "src" />   
-   <property name = "destdir" location = "build/classes/funcionalidades" />
+<project name = "Sistema Bancario" default = "test" basedir = ".">
+   <property name = "testdir" location = "Sistema-Bancario/test" />
+   <property name = "srcdir" location = "Sistema-Bancario/src" />   
+   <property name = "destdir" location = "Sistema-Bancario/build/classes/funcionalidades" />
    <property name = "full-compile" value = "true" />
 	
    <path id = "classpath.base"/>
 	
    <path id = "classpath.test">
-      <pathelement location = "lib/junit_4/junit-4.12.jar" />
+      <pathelement location = "Sistema-Bancario/lib/junit_4/junit-4.12.jar" />
       <pathelement location = "${testdir}" />
       <pathelement location = "${srcdir}" />
       <path refid = "classpath.base" />
