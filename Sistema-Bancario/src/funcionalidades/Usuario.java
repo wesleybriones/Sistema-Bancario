@@ -19,4 +19,8 @@ public class Usuario{
             this.correo = correo;
             this.contra = contra;
         }
+        Usuario(){
+        }
+        
+        
     }

@@ -173,8 +173,10 @@ public class Login extends javax.swing.JFrame {
     Acciones_Bancarias ab = new Acciones_Bancarias();
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if( ab.login(tfnocuenta.getText(), tfcontra.getText())){
-            Menu menu = new Menu();
+            Menu menu = new Menu(tfnocuenta.getText());
             menu.setVisible(true);
+            tfcontra.setText("");
+            tfnocuenta.setText("");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

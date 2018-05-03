@@ -36,4 +36,15 @@ public class Usuarios {
         return false;
     }
     
+    public static Usuario ObtenerDatos(String noCuenta){
+        Usuario UsuarioActual = null;
+        for(int conta = 0; conta < lista.size(); conta++){
+            if(noCuenta.equals(lista.get(conta).noCuenta+"")){
+                UsuarioActual = lista.get(conta);
+                return UsuarioActual;
+            }
+        }
+        return UsuarioActual;
+    }
+    
 }
