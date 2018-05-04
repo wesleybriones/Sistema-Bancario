@@ -99,5 +99,41 @@ public class Acciones_BancariasTest {
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
+
+    /**
+     * Test of login method, of class Acciones_Bancarias.
+     */
+    @Test
+    public void testLogin() {
+        System.out.println("login");
+        String nocuenta = "";
+        String contra = "";
+        Acciones_Bancarias instance = new Acciones_Bancarias();
+        boolean expResult = false;
+        boolean result = instance.login(nocuenta, contra);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of transferirDinero method, of class Acciones_Bancarias.
+     */
+    @Test
+    public void testTransferirDinero() {
+        System.out.println("==========Transferir Dinero==========");
+        String receptor = "11";
+        Usuario pagador = new Usuario("Manuel", "Galván", "1234", "12", "9999999.99", "", "1234");
+        Usuario us_receptor = new Usuario("Juan", "Ruiz", "1234", "11", "0", "", "1234");
+        Usuarios.lista.add(pagador);
+        Usuarios.lista.add(us_receptor);
+        double monto = 100.0;
+        boolean expResult = true;
+        boolean result = Acciones_Bancarias.transferirDinero(receptor, pagador, monto);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("La Cague.");
+    }
+    
     
 }

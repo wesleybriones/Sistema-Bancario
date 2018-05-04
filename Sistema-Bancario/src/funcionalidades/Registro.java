@@ -1,6 +1,8 @@
 
 package funcionalidades;
 
+import javax.swing.JOptionPane;
+
 public class Registro extends javax.swing.JFrame {
 
     public Registro() {
@@ -262,9 +264,9 @@ public class Registro extends javax.swing.JFrame {
     Acciones_Bancarias ab = new Acciones_Bancarias();
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if( ab.nuevo_cliente(tfnombre.getText(), tfapellido.getText(), tfdpi.getText(), 
-                tfnocuenta.getText(), tfsaldoinicial.getText(), tfcorreo.getText(), tfcontra.getText()))
-            System.out.println("exito!");
-        
+                tfnocuenta.getText(), tfsaldoinicial.getText(), tfcorreo.getText(), tfcontra.getText())){
+            JOptionPane.showMessageDialog(null, "Usuario Registrado", "Registro completo", JOptionPane.INFORMATION_MESSAGE);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
