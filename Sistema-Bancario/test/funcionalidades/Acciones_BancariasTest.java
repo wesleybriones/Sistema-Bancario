@@ -46,7 +46,7 @@ public class Acciones_BancariasTest {
         String nombre = "prueba";
         String apellido = "prueba";
         String dpi = "5555";
-        String noCuenta = "10";
+        String noCuenta = "100";
         String saldo = "8";
         String contra = "aa";
         String correo = "juan@gmail.com";
@@ -67,7 +67,7 @@ public class Acciones_BancariasTest {
         String nombre = "prueba";
         String apellido = "prueba";
         String dpi = "5555";
-        String noCuenta = "11";
+        String noCuenta = "101";
         String saldo = "8";
         String correo = "juan@gmail.com";
         String contra = "aa";
@@ -88,7 +88,7 @@ public class Acciones_BancariasTest {
         String nombre = "prueba";
         String apellido = "prueba";
         String dpi = "5555";
-        String noCuenta = "12";
+        String noCuenta = "102";
         String saldo = "8";
         String correo = "juan@gmail.com";
         String contra = "aa";
