@@ -21,8 +21,8 @@ public class Usuarios {
     }
     
     public static boolean exist(String noCuenta){
-        for(int conta = 0; conta < lista.size(); conta++){
-            if(noCuenta.equals(lista.get(conta).noCuenta+""))
+        for(Usuario actual : lista){
+            if(noCuenta.equals(actual.noCuenta+""))
                 return true;
         }
         return false;

@@ -5,6 +5,17 @@ import java.util.LinkedList;
 import javax.swing.JOptionPane;
     
 public class Acciones_Bancarias {
+    
+    Usuario u1; 
+    Usuario u2;
+
+    public Acciones_Bancarias() {
+    }
+
+    public Acciones_Bancarias(Usuario u1, Usuario u2) {
+        this.u1 = u1;
+        this.u2 = u2;
+    }
 
     public boolean login(String nocuenta, String contra) {
         if(Usuarios.exist(nocuenta, contra)){
@@ -48,8 +59,8 @@ public class Acciones_Bancarias {
     }
     
     public static boolean transferirDinero(String receptor, Usuario pagador, double monto){
-        if(Usuarios.exist(receptor) && pagador.saldo >= monto){
-            for(Usuario aux : Usuarios.lista){
+        if(Usuarios.getInstance().exist(receptor) && pagador.saldo >= monto){
+            for(Usuario aux : Usuarios.getInstance().lista){
                 if(aux.noCuenta == pagador.noCuenta){
                     aux.saldo -= monto;
                 }

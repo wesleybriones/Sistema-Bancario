@@ -67,7 +67,7 @@ public class Acciones_BancariasTest {
         String nombre = "prueba";
         String apellido = "prueba";
         String dpi = "5555";
-        String noCuenta = "11";
+        String noCuenta = "1111000";
         String saldo = "8";
         String correo = "juan@gmail.com";
         String contra = "aa";
@@ -102,10 +102,10 @@ public class Acciones_BancariasTest {
 
     /**
      * Test of login method, of class Acciones_Bancarias.
-     */
+     *
     @Test
     public void testLogin() {
-        System.out.println("login");
+        System.out.println("==========Login==========");
         String nocuenta = "";
         String contra = "";
         Acciones_Bancarias instance = new Acciones_Bancarias();
@@ -114,7 +114,7 @@ public class Acciones_BancariasTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of transferirDinero method, of class Acciones_Bancarias.
@@ -125,14 +125,15 @@ public class Acciones_BancariasTest {
         String receptor = "11";
         Usuario pagador = new Usuario("Manuel", "Galván", "1234", "12", "9999999.99", "", "1234");
         Usuario us_receptor = new Usuario("Juan", "Ruiz", "1234", "11", "0", "", "1234");
-        Usuarios.lista.add(pagador);
-        Usuarios.lista.add(us_receptor);
+        Usuarios.getInstance();
+        Usuarios.getInstance().lista.add(pagador);
+        Usuarios.getInstance().lista.add(us_receptor);
         double monto = 100.0;
         boolean expResult = true;
         boolean result = Acciones_Bancarias.transferirDinero(receptor, pagador, monto);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("La Cague.");
+        //fail("La Cague.");
     }
     
     
