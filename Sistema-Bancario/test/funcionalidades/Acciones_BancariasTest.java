@@ -102,7 +102,7 @@ public class Acciones_BancariasTest {
 
     /**
      * Test of login method, of class Acciones_Bancarias.
-     *
+     */
     @Test
     public void testLogin() {
         System.out.println("==========Login==========");
@@ -113,8 +113,8 @@ public class Acciones_BancariasTest {
         boolean result = instance.login(nocuenta, contra);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }*/
+        //fail("The test case is a prototype.");
+    }
 
     /**
      * Test of transferirDinero method, of class Acciones_Bancarias.
