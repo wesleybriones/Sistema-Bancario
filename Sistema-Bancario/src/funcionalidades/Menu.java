@@ -28,6 +28,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel5.setText(UsuarioActual.correo);
         jLabel6.setText(String.valueOf(UsuarioActual.dpi));
         jLabel9.setText(String.valueOf(UsuarioActual.noCuenta));
+        hola;
     }
 
     /**
