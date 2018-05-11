@@ -133,7 +133,7 @@ public class Acciones_BancariasTest {
         boolean result = Acciones_Bancarias.transferirDinero(receptor, pagador, monto);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("La Cague.");
+        fail("La Cague.");
     }
     
     
