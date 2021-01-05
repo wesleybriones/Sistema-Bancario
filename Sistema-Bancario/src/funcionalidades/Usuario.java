@@ -9,7 +9,7 @@ public class Usuario{
         double saldo = 0.0;
         String correo = "";
         String contra = "";
-        
+        //AQUI PODRIAMOS USAR EL PATRON BUILDER
         Usuario(String nombre, String apellido, String dpi, String noCuenta, String saldo, String correo, String contra){
             this.nombre = nombre;
             this.apellido = apellido;
